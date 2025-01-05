@@ -1,0 +1,84 @@
+body  {
+    background-color: cornflowerblue;
+  }
+
+.YouWin {
+    background-color: lightgreen;
+  }
+
+.ComputerWins {
+    background-color: tomato
+  }
+
+.Tie {
+    background-color: aliceblue
+  }
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+h3 {
+    display: flex;
+    font-size: 20pt;
+    position: relative;
+    float: left;
+    margin-top: 0%;
+    margin-left: 20%;
+    margin-bottom: 0%;
+    margin-right: 20%;
+}
+
+h4 {
+    display: flex;
+    font-size: 20pt;
+    position: relative;
+    float: right;
+    margin-top: 0%;
+    margin-left: 15%;
+    margin-bottom: 0%;
+    margin-right: 25%;
+}
+
+.Scissors {
+    background-color: cornflowerblue;
+    border: none;
+    margin-left: 120px;
+}
+
+.Rock {
+    background-color: cornflowerblue;
+    border: none;
+    margin-left: 125px;
+}
+
+.Paper {
+
+    background-color: cornflowerblue;
+    border: none;
+    margin-left: 130px;
+}
+
+.Computer {
+    margin-left: auto;
+}
+
+.User {
+    margin-right: 250px;
+}
+
+.PlayAgain {
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+

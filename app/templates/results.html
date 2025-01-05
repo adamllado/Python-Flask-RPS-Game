@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+
+{% if results == "You Win! :)" %}
+<body class="YouWin">
+    <form action="" method="post">
+        <h2>
+            {{ results }}<br>
+        </h2>
+
+        <a href="{{ url_for('index') }}" class="PlayAgain">
+            Play Again?
+        </a>
+
+        <h3>Computer</h3>
+
+        <h4>YOU</h4>
+
+        <br><img src="{{ url_for('static', filename=computer_image) }}" alt="{{computer_image}}" height="350" width="350" style="margin:200px 150px"><br>
+
+        <br><img src="{{ url_for('static', filename=user_image) }}" alt={{user_image}} height="375" width="350" style="margin: -575px 1000px 1000px 950px"><br>
+    </form>
+</body>
+
+{% elif results == "Computer Wins. :(" %}
+<body class="ComputerWins">
+    <form action="" method="post">
+        <h2>
+            {{ results }}<br>
+        </h2>
+
+        <a href="{{ url_for('index') }}" class="PlayAgain">
+            Play Again?
+        </a>
+
+        <h3>Computer</h3>
+
+        <h4>YOU</h4>
+
+        
+        <br><img src="{{ url_for('static', filename=computer_image) }}" alt="{{computer_image}}" height="350" width="350" style="margin:200px 150px"><br>
+
+        <br><img src="{{ url_for('static', filename=user_image) }}" alt={{user_image}} height="350" width="350" style="margin: -575px 1000px 1000px 900px"><br>
+    </form>
+</body>
+
+{% else %}
+<body class="Tie">
+    <form action="" method="post">
+        <h2>
+            {{ results }}<br>
+        </h2>
+
+        <a href="{{ url_for('index') }}" class="PlayAgain">
+            Play Again?
+        </a>
+
+        <h3>Computer</h3>
+
+        <h4>YOU</h4>
+
+
+        <br><img src="{{ url_for('static', filename=computer_image) }}" alt="{{computer_image}}" height="350" width="350" style="margin:200px 150px"><br>
+
+        <br><img src="{{ url_for('static', filename=user_image) }}" alt={{user_image}} height="350" width="350" style="margin: -575px 1000px 1000px 900px"><br>
+    </form>
+</body>
+{% endif %}
+</html>

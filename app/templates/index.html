@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+    <body>
+        <form action="/results" method="post">
+            <h1> {{ index_title }}<br>
+                   Choose Below
+            </h1>
+            <br>
+            <button type="submit" class="Scissors" name="Scissors" value = "Scissors"><span><img src="{{ url_for('static', filename='scissors.jpg') }}" alt="Scissors" height="325" width="300"></span></button>
+
+            <button type="submit" class="Rock" name="Rock" value = "Rock"><span><img src="{{ url_for('static', filename='rock.jpg') }}" alt="Rock" height="325" width="350"></span></button>
+
+            <button type="submit" class="Paper" name="Paper" value = "Paper"><span><img src="{{ url_for('static', filename='paper.jpg') }}" alt="Paper" height="325" width="280"></span></button>
+        </form>
+    </body>
+</html>
