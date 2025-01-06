@@ -64,3 +64,4 @@ def index():
     index_title = "Welcome to Rock, Paper, Scissors!"
     return render_template('index.html', index_title=index_title)
 
+app.run(port=10000)
